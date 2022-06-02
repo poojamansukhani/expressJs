@@ -37,10 +37,12 @@ router.post("/students", async(req, res) => {
 //Read data of registred student http://localhost:3000/students
 router.get('/students', async(req,res) => {
     try{
-        const studentsData = await student.find();
+        const studentsData = await Student.find();
         res.send(studentsData);
+        console.log(studentsData);
     }catch(err){
         res.send(err);
+        console.log("ERRO");
     }
 })
 //get individual student data 

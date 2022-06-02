@@ -1,0 +1,21 @@
+#Get
+GET  http://localhost:3000/students/
+
+###
+//Patch
+PATCH http://localhost:3000/students/6295c333d5bdaf09adef1d2e
+Content-Type: application/json
+{ "name": "Pallaviii"
+}
+
+###
+//Post
+POST http://localhost:3000/students/
+Content-Type: application/json
+
+{
+    "name": "VSSS",
+    "email": "vss@gmail.com",
+    "phone": 8447534414,
+    "address": "UK"
+}
